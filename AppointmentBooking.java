@@ -24,7 +24,7 @@ class AppointmentBooking
 
 	void dataAdd()		//method for creating Default docotr list present in the database.
 	{
-		doctorName.add("Nagarjun Raut");
+		doctorName.add("Sanyam Jindal");
 		doctorName.add("Ankush Nag");
 		doctorName.add("Prashant Jha");
 		doctorName.add("Ashish Gadpayle");
@@ -48,7 +48,7 @@ class AppointmentBooking
 		doctorGender.add("M");
 		doctorGender.add("M");
 
-		doctorPassword.add("Nagarjun123");
+		doctorPassword.add("Sanyam123");
 		doctorPassword.add("Ankush123");
 		doctorPassword.add("Prashant123");
 		doctorPassword.add("Ashish123");
@@ -64,13 +64,13 @@ class AppointmentBooking
 		doctorAge.add(23);
 		doctorAge.add(30);
 
-		doctorMobileNumber.add(9422887565l);
-		doctorMobileNumber.add(123l);
-		doctorMobileNumber.add(123l);
-		doctorMobileNumber.add(123l);
-		doctorMobileNumber.add(123l);
-		doctorMobileNumber.add(123l);
-		doctorMobileNumber.add(123l);
+		doctorMobileNumber.add(9210348433L);
+		doctorMobileNumber.add(123L);
+		doctorMobileNumber.add(123L);
+		doctorMobileNumber.add(123L);
+		doctorMobileNumber.add(123L);
+		doctorMobileNumber.add(123L);
+		doctorMobileNumber.add(123L);
 
 		doctorCity.add("Gondiya");
 		doctorCity.add("Ranchi");
@@ -590,7 +590,8 @@ class AppointmentBooking
 				else 
 				{
 					System.out.println("Login unsuccessfull..");
-					Thread.sleep(900);					
+					Thread.sleep(900);		
+							
 				}
    	
 	}
@@ -633,3 +634,5 @@ class AppointmentBooking
 		}	}
 	}
 }
+
+
