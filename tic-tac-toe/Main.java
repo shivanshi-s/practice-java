@@ -1,7 +1,5 @@
-package tictactoe;
-
-import java.util.Scanner;
 import java.util.InputMismatchException;
+import java.util.Scanner;
 
 /**
  * Tic-Tac-Toe
@@ -131,35 +129,35 @@ public class Main {
         System.out.println("---------");
     } // printBoard
 
-    private static char[][] userInput() {
-        String boardPositionsStr = "";
-        int counter = 0;
-        xoDiff = 0;
-        do {
-            if (!boardPositionsStr.isEmpty()) {
-                System.out.println("Only 'X', '_', ' ' and 'O' are allowed, 9 positions total");
-            }
-            System.out.print("Enter cells: ");
-            boardPositionsStr = scanner.nextLine().toUpperCase();
-        } while (!boardPositionsStr.matches("[X_ O]+") || boardPositionsStr.length() != 9);
-        int xCount = 0;
-        int oCount = 0;
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                boardPositions[i][j] = boardPositionsStr.charAt(counter);
-                counter++;
-                if (boardPositions[i][j] == 'X') {
-                    xCount++;
-                } else if (boardPositions[i][j] == 'O') {
-                    oCount++;
-                } else {
-                    boardPositions[i][j] = ' ';
-                }
-            }
-        }
-        xoDiff = Math.abs(xCount - oCount);
-        return boardPositions;
-    } // userInput
+    // private static char[][] userInput() {
+    //     String boardPositionsStr = "";
+    //     int counter = 0;
+    //     xoDiff = 0;
+    //     do {
+    //         if (!boardPositionsStr.isEmpty()) {
+    //             System.out.println("Only 'X', '_', ' ' and 'O' are allowed, 9 positions total");
+    //         }
+    //         System.out.print("Enter cells: ");
+    //         boardPositionsStr = scanner.nextLine().toUpperCase();
+    //     } while (!boardPositionsStr.matches("[X_ O]+") || boardPositionsStr.length() != 9);
+    //     int xCount = 0;
+    //     int oCount = 0;
+    //     for (int i = 0; i < 3; i++) {
+    //         for (int j = 0; j < 3; j++) {
+    //             boardPositions[i][j] = boardPositionsStr.charAt(counter);
+    //             counter++;
+    //             if (boardPositions[i][j] == 'X') {
+    //                 xCount++;
+    //             } else if (boardPositions[i][j] == 'O') {
+    //                 oCount++;
+    //             } else {
+    //                 boardPositions[i][j] = ' ';
+    //             }
+    //         }
+    //     }
+    //     xoDiff = Math.abs(xCount - oCount);
+    //     return boardPositions;
+    // } // userInput
 
     public static void main(String[] args) {
         printBoard();
